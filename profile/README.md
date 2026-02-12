@@ -6,7 +6,8 @@
 
 > *ἔργον (ergon) — work, deed, product*
 
-**20 repositories · ~74,000 words of documentation · Silver Sprint complete**
+**22 repositories · ~74,000 words of documentation**
+**15 PRODUCTION · 3 PROTOTYPE · 3 SKELETON · 1 DESIGN_ONLY**
 
 </div>
 
@@ -29,7 +30,7 @@ The products span public records data extraction, perpetual futures trading, liv
 
 | Repository | Description |
 |:-----------|:------------|
-| **[public-record-data-scrapper](https://github.com/organvm-iii-ergon/public-record-data-scrapper)** | **Flagship** — 50-state UCC public records aggregation platform (live Vercel deployment) |
+| **[public-record-data-scrapper](https://github.com/organvm-iii-ergon/public-record-data-scrapper)** ★ | **Flagship** — 50-state UCC public records aggregation platform (live Vercel deployment) |
 | [trade-perpetual-future](https://github.com/organvm-iii-ergon/trade-perpetual-future) | Perpetual futures trading via Drift Protocol (React + Vite + TypeScript) |
 | [universal-mail--automation](https://github.com/organvm-iii-ergon/universal-mail--automation) | Email workflow automation and scheduling |
 
@@ -67,10 +68,13 @@ The products span public records data extraction, perpetual futures trading, liv
 | [mirror-mirror](https://github.com/organvm-iii-ergon/mirror-mirror) | Analytics and customer insights (private) |
 | [the-invisible-ledger](https://github.com/organvm-iii-ergon/the-invisible-ledger) | Financial tracking and accounting (private) |
 | [enterprise-plugin](https://github.com/organvm-iii-ergon/enterprise-plugin) | Enterprise integration layer (private) |
+| [commerce--meta](https://github.com/organvm-iii-ergon/commerce--meta) | Cross-organ commerce coordination and shared commercial infrastructure |
 
 ## Position in the Eight-Organ System
 
 ORGAN-III receives creative and conceptual output from ORGAN-II (Poiesis — Art) and transforms it into deployable products. Those products are then packaged by ORGAN-IV (Taxis — Orchestration) for governance and routing, surfaced by ORGAN-V (Logos — Public Process) for transparent development narratives, and distributed by ORGAN-VII (Kerygma — Marketing). The flow is unidirectional: **Theory → Art → Commerce**. ORGAN-III never depends upstream on its own consumers.
+
+The organvm system spans 81 repositories across 8 organizations, ~320K words of documentation, and 16 published essays.
 
 | Organ | Domain | Organization |
 |:------|:-------|:-------------|
@@ -83,6 +87,8 @@ ORGAN-III receives creative and conceptual output from ORGAN-II (Poiesis — Art
 | VII | Marketing | [organvm-vii-kerygma](https://github.com/organvm-vii-kerygma) |
 | VIII | Meta | [meta-organvm](https://github.com/meta-organvm) |
 
+> **Read the public process:** [organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)
+
 ---
 
-<sub>ORGAN-III: Ergon — part of the eight-organ creative-institutional system · [@4444j99](https://github.com/4444j99)</sub>
+<sub>ORGAN-III: Ergon — 22 repositories · part of the eight-organ creative-institutional system · [@4444j99](https://github.com/4444j99) · CONSOLIDATION-II Sprint 2026-02-12</sub>
