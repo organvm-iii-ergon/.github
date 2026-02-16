@@ -4,6 +4,8 @@
 
 # ORGAN-III: Ergon — Commerce & Products
 
+_Product platforms: data tools, trading systems, and civic tech_
+
 > *ἔργον (ergon) — work, deed, product*
 
 **22 repositories · ~74,000 words of documentation**
