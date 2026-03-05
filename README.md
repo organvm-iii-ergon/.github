@@ -33,6 +33,12 @@ guidance, issue and pull request templates, Dependabot configuration, and the
 | Dependency automation | [`.github/dependabot.yml`](.github/dependabot.yml) |
 | Automation contract | [`seed.yaml`](seed.yaml) |
 
+## Included Governance Assets
+
+- Issue templates and PR template defaults
+- Organization-level workflows
+- [README standards](README_STANDARDS.md)
+
 ## Validation
 
 The minimal CI workflow checks that the shipped `.github` surfaces remain
