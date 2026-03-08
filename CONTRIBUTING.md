@@ -51,3 +51,7 @@ By contributing to ORGAN-III repositories, you agree that your contributions are
 ---
 
 *Part of the [organvm eight-organ system](https://github.com/meta-organvm)*
+
+## Documentation Standards
+
+- README structure and depth should follow [README standards](README_STANDARDS.md)
