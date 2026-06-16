@@ -8,7 +8,7 @@ _Product platforms: data tools, trading systems, and civic tech_
 
 > *ἔργον (ergon) — work, deed, product*
 
-**22 repositories · ~74,000 words of documentation**
+**32 repositories · ~74,000 words of documentation**
 **15 PRODUCTION · 3 PROTOTYPE · 3 SKELETON · 1 DESIGN_ONLY**
 
 </div>
@@ -93,4 +93,4 @@ The organvm system spans 81 repositories across 8 organizations, ~320K words of 
 
 ---
 
-<sub>ORGAN-III: Ergon — 22 repositories · part of the eight-organ creative-institutional system · [@4444j99](https://github.com/4444j99) · CONSOLIDATION-II Sprint 2026-02-12</sub>
+<sub>ORGAN-III: Ergon — 32 repositories · part of the eight-organ creative-institutional system · [@4444j99](https://github.com/4444j99) · CONSOLIDATION-II Sprint 2026-02-12</sub>
