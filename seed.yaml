@@ -12,7 +12,29 @@ org: organvm-iii-ergon
 metadata:
   implementation_status: PRODUCTION
   tier: infrastructure
-  promotion_status: CANDIDATE
-  last_validated: "2026-02-10"
+  promotion_status: SHIP_NOW
+  last_validated: "2026-06-18"
   generated: "2026-02-12"
   sprint: "AUTONOMY"
+  activation_audit:
+    task: GH-organvm-iii-ergon-github-6
+    issue: "https://github.com/organvm-iii-ergon/.github/issues/6"
+    classification: actually-live
+    ship_status: ship-now
+    shipped_test: "PASS: profile README renders on https://github.com/organvm-iii-ergon"
+
+surfaces:
+  profile: profile/README.md
+  community_health:
+    - CODE_OF_CONDUCT.md
+    - CONTRIBUTING.md
+    - SECURITY.md
+  templates:
+    - .github/ISSUE_TEMPLATE/bug_report.md
+    - .github/ISSUE_TEMPLATE/documentation.md
+    - .github/ISSUE_TEMPLATE/feature_request.md
+    - .github/PULL_REQUEST_TEMPLATE.md
+  automation:
+    - .github/dependabot.yml
+    - .github/workflows/ci-minimal.yml
+    - .github/workflows/dispatch-receiver.yml

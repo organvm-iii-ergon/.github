@@ -5,6 +5,7 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   validate:
@@ -12,24 +13,47 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Check README exists
+      - name: Check shipped meta surfaces
         run: |
-          if [ -f README.md ]; then
-            echo "README.md found ($(wc -w < README.md) words)"
-          elif [ -f profile/README.md ]; then
-            echo "profile/README.md found ($(wc -w < profile/README.md) words)"
-          else
-            echo "::error::No README.md found"
+          required_files=(
+            README.md
+            profile/README.md
+            CODE_OF_CONDUCT.md
+            CONTRIBUTING.md
+            SECURITY.md
+            seed.yaml
+            organ-aesthetic.yaml
+            .github/ISSUE_TEMPLATE/bug_report.md
+            .github/ISSUE_TEMPLATE/documentation.md
+            .github/ISSUE_TEMPLATE/feature_request.md
+            .github/ISSUE_TEMPLATE/config.yml
+            .github/PULL_REQUEST_TEMPLATE.md
+            .github/dependabot.yml
+            .github/workflows/dispatch-receiver.yml
+          )
+
+          missing=0
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "::error::Missing required activation artifact: $file"
+              missing=1
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
             exit 1
           fi
 
-      - name: Validate seed.yaml
+          grep -q "ORGAN-III: Ergon" profile/README.md
+          grep -q "organvm-iii-ergon" README.md
+          echo "All shipped activation artifacts are present"
+
+      - name: Validate YAML contracts
         run: |
-          if [ -f seed.yaml ]; then
-            python3 -c "import yaml; yaml.safe_load(open('seed.yaml'))" && echo "seed.yaml is valid YAML" || { echo "::error::seed.yaml is invalid YAML"; exit 1; }
-          else
-            echo "No seed.yaml (optional for this repo type)"
-          fi
+          ruby -e "require 'yaml'; ARGV.each { |path| YAML.load_file(path); puts \"#{path} is valid YAML\" }" \
+            seed.yaml \
+            organ-aesthetic.yaml \
+            .github/dependabot.yml \
+            .github/ISSUE_TEMPLATE/config.yml
 
       - name: Secret scan
         run: |
