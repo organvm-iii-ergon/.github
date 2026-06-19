@@ -11,6 +11,8 @@ guidance, issue and pull request templates, Dependabot configuration, and the
 
 ## Activation Audit
 
+### Current State
+
 - Task: `GH-organvm-iii-ergon-github-6`
 - Issue: [`organvm-iii-ergon/.github#6`](https://github.com/organvm-iii-ergon/.github/issues/6)
 - Classification: `actually-live`
@@ -19,6 +21,20 @@ guidance, issue and pull request templates, Dependabot configuration, and the
   [`organvm-iii-ergon`](https://github.com/organvm-iii-ergon) organization
   landing page.
 - Last validated: `2026-06-18`
+
+### Parked Historical Audit
+
+- Task: `GH-organvm-iii-ergon-github-7`
+- Issue: [`organvm-iii-ergon/.github#7`](https://github.com/organvm-iii-ergon/.github/issues/7)
+- Cursor: `EV-2026-06-11-200226`
+- Frozen state: `docs-only-shell`
+- Evidence level: `inspected-only`
+- Verdict requested: `park`
+- Park rationale: live URL, installable package, runnable release, and
+  documented execution path were not documented in the frozen audit packet.
+- Disposition: superseded by the current `actually-live` audit after the
+  organization profile URL and required community-health surfaces were
+  documented and validated.
 
 ## Live Surfaces
 
