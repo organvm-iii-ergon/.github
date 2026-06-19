@@ -22,6 +22,23 @@ metadata:
     classification: actually-live
     ship_status: ship-now
     shipped_test: "PASS: profile README renders on https://github.com/organvm-iii-ergon"
+  activation_audit_history:
+    - task: GH-organvm-iii-ergon-github-7
+      issue: "https://github.com/organvm-iii-ergon/.github/issues/7"
+      event: EV-2026-06-11
+      cursor: EV-2026-06-11-200226
+      frozen_state: docs-only-shell
+      evidence_level: inspected-only
+      verdict: park
+      labels_requested:
+        - activation-audit
+        - p
+      shipped_test:
+        live_url: not documented
+        installable_pkg: not documented
+        runnable_release: not documented
+        documented_exec_path: not documented
+      disposition: "Superseded by GH-organvm-iii-ergon-github-6 ship-now audit on 2026-06-18; retained as historical audit evidence."
 
 surfaces:
   profile: profile/README.md
