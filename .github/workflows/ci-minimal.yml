@@ -68,3 +68,8 @@ jobs:
             exit 1
           fi
           echo "No secret patterns detected"
+
+      - name: Lint GitHub Actions workflows
+        run: |
+          bash <(curl -s https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
+          ./actionlint -color
